@@ -5,3 +5,12 @@ html, body {
   padding: 0;
   font-family: 'Helvetica', sans-serif;
 }
+
+/* Func */
+.multi-level, .item ul, .nav input[type="checkbox"] {
+  display: none;
+}
+
+#menu:checked ~ .multi-level, .item input:checked ~ ul {
+  display: block;
+}
