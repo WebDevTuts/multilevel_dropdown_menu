@@ -14,3 +14,23 @@ html, body {
 #menu:checked ~ .multi-level, .item input:checked ~ ul {
   display: block;
 }
+
+/* Arrow */
+.arrow {
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  float: left;
+  z-index: 0;
+  margin: 17px 1em 0 2em;
+}
+
+.item input + .arrow {
+  transform: rotate(-90deg);
+  transition: 0.1s;
+}
+
+.item input:checked + .arrow {
+  transform: rotate(0deg);
+  transition: 0.1s;
+}
